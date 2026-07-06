@@ -15,14 +15,14 @@
         <a href="#" class="logo">Portfolio</a>
 
         <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skill</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="#" style="--i:5">Contact</a>
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skill</a>
+            <a href="#projects" style="--i:4">Projects</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Vibhu Gautam</h1>
@@ -60,134 +60,348 @@
         </div>
     </section>
 
-    <section>
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My <span>Services</span></h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-database" style="color: hsl(184, 100%, 50%);"></i>
-                        <h2>Data Analysis</h2>
-                        <p>Clean, transform, and analyze complex datasets using Python, SQL, and Excel to identify
-                            trends, solve business problems, uncover valuable insights, and support data-driven
-                            decision-making across various domains and industries.</p>
-                        <a href="#" class="read">learn more</a>
+    <section class="skills-section" id="skills">
+        <div class="skills-heading">
+            <h2>My <span>Skills</span></h2>
+            <p>
+                A combination of technical expertise, analytical thinking, and business
+                understanding to transform data into meaningful insights.
+            </p>
+        </div>
+        <div class="skills-container">
+            <div class="skills-row">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-code"></i>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-chart-line" style="color: hsl(184, 100%, 50%);"></i>
-                        <h2>Dashboarding</h2>
-                        <p>Create interactive and visually engaging Power BI and Tableau dashboards that monitor KPIs,
-                            track business performance, highlight important metrics, and enable stakeholders to make
-                            informed strategic decisions efficiently.</p>
-                        <a href="#" class="read">learn more</a>
+
+                    <h3>Programming & Querying</h3>
+
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Java</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon purple">
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-chart-pie" style="color: hsl(184, 100%, 50%);"></i>
-                        <h2>Data Visualization</h2>
-                        <p>Transform complex datasets into clear, meaningful visualizations using charts, graphs, and
-                            reports that improve understanding, reveal patterns, communicate insights effectively, and
-                            support better business outcomes.</p>
-                        <a href="#" class="read">learn more</a> 
+
+                    <h3>Data Analysis</h3>
+
+                    <ul>
+                        <li>Data Cleaning</li>
+                        <li>Exploratory Data Analysis</li>
+                        <li>Statistical Analysis</li>
+                        <li>Data Wrangling</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon pink">
+                        <i class="fa-solid fa-chart-column"></i>
                     </div>
+
+                    <h3>Visualization & BI Tools</h3>
+
+                    <ul>
+                        <li>Power BI</li>
+                        <li>Tableau</li>
+                        <li>Microsoft Excel</li>
+                        <li>Google Looker Studio</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon blue">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <h3>Databases</h3>
+
+                    <ul>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Mongoose</li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="skills-row">
+                <div class="skill-card">
+                    <div class="skill-icon green">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+
+                    <h3>Libraries</h3>
+
+                    <ul>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon orange">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <h3>Tools & Platforms</h3>
+
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Jupyter Notebook</li>
+                        <li>Anaconda</li>
+                        <li>Git & GitHub</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon cyan">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <h3>Core Competencies</h3>
+
+                    <ul>
+                        <li>Analytical Thinking</li>
+                        <li>Problem Solving</li>
+                        <li>Critical Thinking</li>
+                        <li>Communication</li>
+                        <li>Team Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <h1 class="sub-title">My <span>Skills</span></h1>
+    <!--========================
+        PROJECTS SECTION
+    ========================--->
 
-    <section>
-        <div class="container1" id="skills">
-            <h1 class="heading1">Technical Skills</h1>
+    <section class="projects-section" id="projects">
+        <div class="projects-heading">
+            <h2>Featured <span>Projects</span></h2>
+            <p>Real-world data analysis and visualization projects
+                that transform raw data into meaningful insights.</p>
+        </div>
+        <!-- Projects Container -->
+        <div class="projects-container">
 
-            <div class="Technical-bars">
-                <div class="bar"><i class="fa-brands fa-python" style="color: #147bbc;"></i>
-                    <div class="info">
-                        <span>Python</span>
-                    </div>
-                    <div class="progress-line python">
-                        <span></span>
-                    </div>
+            <!-- ==================================
+        PROJECT 1 : HR ANALYTICS DASHBOARD
+        =================================== -->
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="HR_Dashboard.png">
                 </div>
-                <div class="bar"><i class="fa-solid fa-database" style="color: rgb(20, 123, 188);"></i>
-                    <div class="info">
-                        <span>SQL</span>
+                <div class="project-content">
+                    <div class="project-type">
+                        Power BI Dashboard
                     </div>
-                    <div class="progress-line sql">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i class="fa-solid fa-chart-column" style="color: #147bbc;"></i>
-                    <div class="info">
+                    <h3>HR Analytics Dashboard</h3>
+                    <p>Interactive Power BI dashboard developed to analyze
+                        employee attrition, workforce demographics, salary
+                        distribution, and key HR metrics for better
+                        decision-making.</p>
+                    <div class="tech-stack">
                         <span>Power BI</span>
-                    </div>
-                    <div class="progress-line powerbi">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i class="fa-solid fa-file-excel" style="color: #147bbc;"></i>
-                    <div class="info">
+                        <span>DAX</span>
                         <span>Excel</span>
+                        <span>Data Modeling</span>
                     </div>
-                    <div class="progress-line excel">
-                        <span></span>
+                    <div class="project-stats">
+                        <div class="stat-box">
+                            <h4>1470+</h4>
+                            <span>Employees</span>
+                        </div>
+                        <div class="stat-box">
+                            <h4>16%</h4>
+                            <span>Attrition</span>
+                        </div>
+                        <div class="stat-box">
+                            <h4>8</h4>
+                            <span>KPIs</span>
+                        </div>
+                        <div class="stat-box">
+                            <h4>5</h4>
+                            <span>Insights</span>
+                        </div>
+                    </div>
+                    <!-- GitHub Button -->
+                    <div class="project-buttons">
+                        <a href="https://github.com/Vibhuv95/HR-Analytics-Dashboard" target="_blank" class="github-btn">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub</a>
                     </div>
                 </div>
-                <div class="bar"><i class="fa-solid fa-chart-line" style="color: #147bbc;"></i>
-                    <div class="info">
-                        <span>Data Visualization</span>
+            </div>
+
+            <!-- ==================================
+        PROJECT 2 : SALES PERFORMANCE DASHBOARD
+        =================================== -->
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Sales_Dashboard.png" alt="Sales Performance Dashboard">
+                </div>
+                <!-- Project Content -->
+                <div class="project-content">
+                    <div class="project-type">
+                        Power BI Dashboard
                     </div>
-                    <div class="progress-line visualisation">
-                        <span></span>
+                    <h3>Sales Performance Dashboard</h3>
+                    <p>
+                        Interactive Power BI dashboard developed to analyze
+                        sales performance, regional trends, product categories,
+                        and business KPIs to support data-driven decision making.
+                    </p>
+                    <!-- Tech Stack -->
+                    <div class="tech-stack">
+                        <span>Power BI</span>
+                        <span>SQL</span>
+                        <span>Excel</span>
+                        <span>DAX</span>
+                    </div>
+                    <!-- Project Statistics -->
+                    <div class="project-stats">
+                        <div class="stat-box">
+                            <h4>25K+</h4>
+                            <span>Records</span>
+                        </div>
+                        <div class="stat-box">
+                            <h4>5</h4>
+                            <span>Regions</span>
+                        </div>
+                        <div class="stat-box">
+                            <h4>10+</h4>
+                            <span>DAX Measures</span>
+                        </div>
+                        <div class="stat-box">
+                            <h4>12</h4>
+                            <span>Months</span>
+                        </div>
+                    </div>
+                    <!-- GitHub Button -->
+                    <div class="project-buttons">
+                        <a href="https://github.com/Vibhuv95/Sales-Performance-KPI-Dashboard" target="_blank"
+                            class="github-btn">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================================
+        PROJECT 3 : EXPLORATORY DATA ANALYSIS
+        =================================== -->
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="EDA.png" alt="E-Commerce Sales Analysis">
+                </div>
+                <div class="project-content">
+                    <div class="project-type">
+                        Python Data Analysis
+                    </div>
+                    <h3>E-Commerce Sales Analysis</h3>
+                    <p>
+                        Exploratory Data Analysis (EDA) project performed using Python
+                        to analyze customer behavior, product performance, sales trends,
+                        and business insights through visualizations.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat-box">
+                            <h4>10K+</h4>
+                            <span>Records</span>
+                        </div>
+                        <div class="stat-box">
+                            <h4>20+</h4>
+                            <span>Visualizations</span>
+                        </div>
+                        <div class="stat-box">
+                            <h4>15+</h4>
+                            <span>Insights</span>
+                        </div>
+                        <div class="stat-box">
+                            <h4>100%</h4>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Vibhuv95/Exploratory-Data-Analysis" target="_blank"
+                            class="github-btn">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container1">
-            <h1 class="heading1">Professional Skills</h1>
-            <div class="radial-bars">
+        <!--================
+        MORE PROJECTS BUTTON
+        ================ -->
 
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Creativity</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">65%</div>
-                    <div class="text">Communication</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">75%</div>
-                    <div class="text">Problem Solving</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">85%</div>
-                    <div class="text">Team Work</div>
-                </div>
-            </div>    
+        <div class="more-projects">
+            <a href="https://github.com/Vibhuv95" target="_blank" class="more-project-btn">
+                <i class="fa-regular fa-star"></i>
+                More Projects Coming Soon...
+            </a>
         </div>
+
     </section>
 
 
 
+
+
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's Work Together</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsa mollitia, inventore error
+                aspernatur sit optio, illo repellat, ex aliquid cum! Perspiciatis tempora nihil iusto vero vitae labore
+                laborum suscipit?</p>
+            <div class="contact-list">
+                <li><i class="fa-solid fa-envelope" style="color: rgb(0, 238, 255);"></i>
+                    vibhugautam8081371284@gmail.com</li>
+                <li><i class="fa-solid fa-phone" style="color: rgb(0, 238, 255);"></i> +91 8707668389</li>
+            </div>
+            <div class="contact-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type="" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="" placeholder="Enter Your Subject">
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
+    </section>
+
+    <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
 
 
     <script src="main.js"></script>
