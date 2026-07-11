@@ -89,7 +89,7 @@ window.addEventListener("scroll", () => {
 const fadeSections = document.querySelectorAll(".fade-section");
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
-
+        
         if(entry.isIntersecting){
             entry.target.classList.add("show");
         }else{
@@ -100,3 +100,13 @@ const observer = new IntersectionObserver((entries)=>{
     threshold:0.2
 });
 fadeSections.forEach(section=>observer.observe(section));
+
+/*==================== MENU ICON ====================*/
+
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("fa-xmark");
+    navbar.classList.toggle("active");
+};

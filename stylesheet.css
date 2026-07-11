@@ -6,6 +6,13 @@
     font-family: 'poppins', sans-serif;
 }
 
+#menu-icon {
+    font-size: 3.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
 body {
     color: #ededed;
     background: #081b29;
@@ -60,105 +67,255 @@ body {
     text-shadow: 0 0 10px #0ef;
 }
 
+
+/*==========================
+        HOME SECTION
+==========================*/
+
 .home {
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    height: 100vh;
-    background: url(Photo.png) no-repeat;
-    background-size: cover;
-    background-position: center;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 70px 10% 0;
+    justify-content: space-between;
+    gap: 0px;
+    padding: 110px 10% 70px;
 }
 
 .home-content {
-    max-width: 600px;
+    flex: 0.8;
+    margin-bottom: 160px;
+    max-width: 650px;
 }
 
 .home-content h3 {
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
-    animation-delay: .7s;
-}
-
-.home-content h3:nth-of-type(2) {
-    margin-bottom: 30px;
-    animation: slideTop is ease forward;
-    animation-delay: .7s;
-}
-
-.home-content h3 span {
-    color: #0ef;
 }
 
 .home-content h1 {
-    font-size: 56px;
-    font-weight: 600;
-    margin: -3px 0;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 15px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: .3s;
+}
+
+.home-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #fff;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .6s;
+}
+
+.home-content h2 span {
+    color: #0ef;
 }
 
 .home-content p {
-    font-size: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #d9d9d9;
+    margin-bottom: 35px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: .8s;
+}
+
+/*==========================
+      SOCIAL ICONS
+==========================*/
+
+.home-sci {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 40px;
 }
 
 .home-sci a {
-    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #0ef;
-    border-radius: 50px;
-    font-size: 20px;
-    color: #0ef;
-    text-decoration: none;
-    transition: .5s ease;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
 
-    margin: 30px 15px 30px 0;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    font-size: 20px;
+
+    text-decoration: none;
+    transition: .35s;
 }
 
 .home-sci a:hover {
     background: #0ef;
     color: #081b29;
+    transform: translateY(-5px);
     box-shadow: 0 0 20px #0ef;
 }
 
-.btn-box {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #0ef;
+/*==========================
+        BUTTONS
+==========================*/
+
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-box,
+.btn-outline {
+    padding: 14px 30px;
     border-radius: 40px;
     font-size: 16px;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
     font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-        0 0 25px #0ef
+    text-decoration: none;
+    transition: .35s;
+}
+
+.btn-box {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px rgba(0, 238, 255, .4);
 }
 
 .btn-box:hover {
-    box-shadow: 0 0 5px cyan,
-        0 0 25px cyan, 0 0 50px cyan,
-        0 0 100px cyan, 0 0 200px cyan;
+    transform: translateY(-4px);
+    box-shadow: 0 0 35px rgba(0, 238, 255, .8);
 }
+
+.btn-outline {
+    border: 2px solid #0ef;
+    color: #0ef;
+}
+
+.btn-outline:hover {
+    background: #0ef;
+    color: #081b29;
+}
+
+/*==========================
+        IMAGE
+==========================*/
+
+.home-image {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    object-fit: contain;
+}
+
+/*==========================
+      MOBILE RESPONSIVE
+==========================*/
+
+@media (min-width: 1200px) {
+
+    .home-image {
+        transform: translateX(40px);
+        margin-bottom: 160px;
+    }
+
+}
+
+@media (max-width:992px) {
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-image img {
+        max-width: 360px;
+    }
+
+    .home-sci {
+        justify-content: center;
+    }
+
+    .home-buttons {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .home {
+        padding: 120px 8% 60px;
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .home-image img {
+        max-width: 290px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.35rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .home-image img {
+        max-width: 240px;
+    }
+
+    .btn-box,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
 
 @keyframes slideRight {
     0% {
@@ -728,7 +885,7 @@ body {
     transition: 0.4s ease;
     position: relative;
     overflow: hidden;
-    min-height: 330px;
+    min-height: auto;
     width: 300px;
     animation: fadeUp .8s ease forwards;
     opacity: 0;
@@ -747,7 +904,7 @@ body {
 .skill-icon {
     width: 60px;
     height: 60px;
-    font-size: 30px;
+    font-size: 24px;
     margin: 0 auto 25px;
     border-radius: 50%;
     display: flex;
@@ -988,33 +1145,21 @@ body {
         RESPONSIVE
 =====================================*/
 
-@media(max-width:1200px) {
-    .skills-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 @media(max-width:992px) {
-    .skills-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .skill-card h3 {
         font-size: 24px;
     }
 }
 
-@media(max-width:768px) {
-    .skills-section {
-        padding: 80px 25px;
-    }
+@media (max-width:768px) {
 
-    .skills-heading {
-        margin-bottom: 50px;
+    .skills-section {
+        padding: 70px 20px;
     }
 
     .skills-heading h2 {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .skills-heading p {
@@ -1022,13 +1167,28 @@ body {
     }
 
     .skills-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .skill-icon {
-        width: 75px;
-        height: 75px;
-        font-size: 30px;
+    .skills-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 0;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 380px;
+        min-height: auto;
+        padding: 30px 22px;
+    }
+
+    .skills-row:last-child .skill-card {
+        width: 100%;
+        max-width: 380px;
     }
 
     .skill-card h3 {
@@ -1037,7 +1197,6 @@ body {
 
     .skill-card ul li {
         font-size: 16px;
-        padding: 10px 0 10px 25px;
     }
 }
 
@@ -2444,6 +2603,37 @@ body {
         font-size: 16px;
         padding: 15px;
     }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 5%;
+        background: #081b29;
+        border-top: .1rem solid rgba(0, 255, 255, .2);
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .header {
+        padding: 2rem 5%;
+    }
 }
 
 @media (max-width:480px) {
@@ -2536,7 +2726,7 @@ body {
    ====================*/
 
 .footer {
-    background: #081b29;
+    background: #03121d;
     border-top: 1px solid rgba(255, 255, 255, .08);
     padding: 70px 9% 25px;
 }
