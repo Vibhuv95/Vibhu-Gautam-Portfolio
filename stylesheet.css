@@ -83,7 +83,6 @@ body {
 
 .home-content {
     flex: 0.8;
-    margin-bottom: 160px;
     max-width: 650px;
 }
 
@@ -218,7 +217,7 @@ body {
 
 .home-image img {
     width: 100%;
-    max-width: 720px;
+    max-width: 560px;
     height: auto;
     object-fit: contain;
 }
@@ -231,7 +230,10 @@ body {
 
     .home-image {
         transform: translateX(40px);
-        margin-bottom: 160px;
+    }
+
+    .home-image img {
+        margin-left: 40px;
     }
 
 }
@@ -286,6 +288,44 @@ body {
 
     .home-image img {
         max-width: 290px;
+    }
+
+    .header {
+        padding: 14px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    #menu-icon {
+        font-size: 30px;
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 5%;
+        background: #081b29;
+        border-top: .1rem solid rgba(0, 255, 255, .2);
+        display: none;
+        flex-direction: column;
+        opacity: 90%;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 18px 0;
+        text-align: center;
+        font-size: 14px;
+        margin: 16px 0;
     }
 
 }
@@ -2398,12 +2438,6 @@ body {
     gap: 20px;
 }
 
-.input-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
 /*======================================
         INPUTS
 =======================================*/
@@ -2604,36 +2638,6 @@ body {
         padding: 15px;
     }
 
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 5%;
-        background: #081b29;
-        border-top: .1rem solid rgba(0, 255, 255, .2);
-        display: none;
-        flex-direction: column;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 1.5rem 0;
-        text-align: center;
-    }
-
-    .header {
-        padding: 2rem 5%;
-    }
 }
 
 @media (max-width:480px) {
